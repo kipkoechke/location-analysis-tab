@@ -98,7 +98,7 @@ function PropertyListings() {
     },
   ];
 
-  const getStatusColor = (status: String) => {
+  const getStatusColor = (status: string) => {
     switch (status) {
       case "active":
         return "bg-green-500";

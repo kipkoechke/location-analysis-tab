@@ -1,6 +1,13 @@
 "use client";
-import clsx from "clsx"; // Optional: Use clsx for cleaner class merging
-import { createContext, ReactNode, useContext, useState } from "react";
+
+import clsx from "clsx";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 type TabsContextType = {
   value: string;
@@ -13,13 +20,31 @@ type TabsProps = {
   defaultValue: string;
   children: ReactNode;
   className?: string;
+  onValueChange?: (value: string) => void;
 };
 
-export function Tabs({ defaultValue, children, className }: TabsProps) {
+export function Tabs({
+  defaultValue,
+  children,
+  className,
+  onValueChange,
+}: TabsProps) {
   const [value, setValue] = useState(defaultValue);
 
+  // Call onValueChange when value changes
+  useEffect(() => {
+    if (onValueChange) {
+      onValueChange(value);
+    }
+  }, [value, onValueChange]);
+
+  // A wrapper for setValue to handle both internal state and callback
+  const handleSetValue = (newValue: string) => {
+    setValue(newValue);
+  };
+
   return (
-    <TabsContext.Provider value={{ value, setValue }}>
+    <TabsContext.Provider value={{ value, setValue: handleSetValue }}>
       <div className={clsx("tabs", className)}>{children}</div>
     </TabsContext.Provider>
   );

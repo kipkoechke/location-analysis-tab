@@ -1,5 +1,5 @@
 function Settings() {
-  return <div>Settings</div>;
+  return <div className="container mx-auto">Settings</div>;
 }
 
 export default Settings;

@@ -8,8 +8,17 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+
+interface ConstructionData {
+  name: string;
+  start: number;
+  end: number;
+  duration: number;
+  color: string;
+}
+
 function ConstructionTimeline() {
-  const constructionData = [
+  const constructionData: ConstructionData[] = [
     {
       name: "640 Columbia - Logistics",
       start: 2024,
@@ -39,7 +48,7 @@ function ConstructionTimeline() {
     payload,
   }: {
     active?: boolean;
-    payload?: any[];
+    payload?: { payload: ConstructionData }[]; // Define the correct type for payload
   }) => {
     if (active && payload && payload.length) {
       const data = payload[0].payload;
@@ -99,7 +108,6 @@ function ConstructionTimeline() {
                 dataKey="duration"
                 background={{ fill: "#f3f4f6" }}
                 radius={[0, 0, 0, 0]}
-                // startPointsAt="startPos"
               >
                 {transformedConstructionData.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />

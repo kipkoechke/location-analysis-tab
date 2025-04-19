@@ -14,25 +14,25 @@ function ProximityToKeyInfra() {
             {/* <div className="text-gray-500 text-center">Interactive Map</div> */}
 
             {/* Transportation Icons */}
-            <div className="absolute right-[380px] top-1/4">
+            <div className="absolute right-[300px] top-1/5">
               <div className="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs">
                 H
               </div>
             </div>
 
-            <div className="absolute right-[380px] top-3/4">
+            <div className="absolute right-[300px] top-3/4">
               <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white text-xs">
                 P
               </div>
             </div>
 
-            <div className="absolute left-[370px] bottom-[65px]">
+            <div className="absolute left-[300px] bottom-[65px]">
               <div className="w-6 h-6 rounded-full bg-amber-500 flex items-center justify-center text-white text-xs">
                 R
               </div>
             </div>
 
-            <div className="absolute left-[380px] top-1/5">
+            <div className="absolute left-[290px] top-1/5">
               <div className="w-6 h-6 rounded-full bg-purple-500 flex items-center justify-center text-white text-xs">
                 A
               </div>

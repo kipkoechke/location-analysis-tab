@@ -77,8 +77,8 @@ function RightColumnData({ property }: { property: Property }) {
               <td className="border border-primary py-2 px-4 font-bold text-[12px] text-primary">
                 Clear Height
               </td>
-              <td className="border border-primary py-2 px-4">36'</td>
-              <td className="border border-primary py-2 px-4">40'</td>
+              <td className="border border-primary py-2 px-4">36&#39;</td>
+              <td className="border border-primary py-2 px-4">40&#39;</td>
             </tr>
             <tr>
               <td className="border border-primary py-2 px-4 font-bold text-[12px] text-primary">

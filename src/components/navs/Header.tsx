@@ -4,7 +4,7 @@ import Nav from "@/components/navs/Nav";
 
 function Header() {
   return (
-    <header className="py-8 text-tertiary xl:py-12">
+    <header className="text-tertiary xl:py-4">
       <div className="container mx-auto flex items-center justify-between">
         {/* Desktop Nav */}
         <div className="hidden xl:flex items-center gap-8">

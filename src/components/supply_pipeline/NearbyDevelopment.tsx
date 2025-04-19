@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NearbyDevelopment = () => {
   const data = [
     {
@@ -65,9 +67,12 @@ const DevelopmentCard = ({
     <div className="flex items-start gap-4">
       {/* Image Section */}
       <div className="flex-shrink-0 w-[161px] h-[140px] rounded-md overflow-hidden">
-        <img
+        <Image
           src={item.image}
           alt={item.address}
+          width={161}
+          height={140}
+          priority
           className="w-full h-full object-cover"
         />
       </div>

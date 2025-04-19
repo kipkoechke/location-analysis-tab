@@ -1,5 +1,5 @@
 function Pipeline() {
-  return <div>Pipeline</div>;
+  return <div className="container mx-auto">Pipeline</div>;
 }
 
 export default Pipeline;

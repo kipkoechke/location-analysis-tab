@@ -27,7 +27,7 @@ function DemographicInsights() {
         <li className="flex items-start">
           <span className="w-5 h-5 rounded-full bg-red-500 mr-4 mt-1"></span>
           <span>
-            Education: 36% of workforce has bachelor's degree or higher
+            Education: 36% of workforce has bachelor&apos;s degree or higher
           </span>
         </li>
         <li className="flex items-start">

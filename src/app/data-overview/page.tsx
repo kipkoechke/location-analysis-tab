@@ -1,5 +1,5 @@
 function DataOverview() {
-  return <div>DataOverview</div>;
+  return <div className="container mx-auto">DataOverview</div>;
 }
 
 export default DataOverview;
