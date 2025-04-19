@@ -1,5 +1,17 @@
-function LandSaleComparables() {
-  return <div>LandSaleComparables</div>;
-}
+"use client";
 
-export default LandSaleComparables;
+import PropertyListings from "./PropertyListings";
+import TableHeaders from "./TableHeaders";
+
+export default function LandSaleComparables() {
+  return (
+    <div className="min-h-screen">
+      {/* Table Headers */}
+      <TableHeaders />
+      {/* Property Listings */}
+      <PropertyListings />
+
+      {/* Property Listings with Accordion */}
+    </div>
+  );
+}

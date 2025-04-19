@@ -17,7 +17,7 @@ export default function Location() {
         <TabsList>
           <TabsTrigger value="supply-pipeline">Supply Pipeline</TabsTrigger>
           <TabsTrigger value="land-scale-comparables">
-            Land Scale Comparables
+            Land Sale Comparables
           </TabsTrigger>
           <TabsTrigger value="demographic-trends">
             Demographic Trends
