@@ -5,12 +5,12 @@ function ImpactAnalysis() {
     "Notable increase in last-mile logistics facilities to support e-commerce growth",
   ];
   return (
-    <div>
-      <h3 className="text-lg font-bold text-primary mb-4">
+    <div className="p-4">
+      <h3 className="text-lg font-bold text-gray-900 mb-4">
         Market Impact Analysis
       </h3>
 
-      <p className="mb-4 text-primary">
+      <p className="mb-4 text-gray-900">
         New development activity in the area indicates:
       </p>
 
@@ -18,7 +18,7 @@ function ImpactAnalysis() {
         {impactPoints.map((point, index) => (
           <li key={index} className="flex items-start">
             <div className="w-2 h-2 rounded-full bg-gray-900 mt-2 mr-3"></div>
-            <span className="text-primary">{point}</span>
+            <span className="text-gray-900">{point}</span>
           </li>
         ))}
       </ul>
