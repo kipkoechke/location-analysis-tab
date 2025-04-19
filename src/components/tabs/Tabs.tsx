@@ -87,7 +87,7 @@ export function TabsTrigger({ value, children, className }: TabsTriggerProps) {
       className={clsx(
         "tabs-trigger px-4 py-2 rounded",
         activeValue === value
-          ? "text-primary font-bold"
+          ? "text-secondary font-bold bg-primary"
           : "text-tertiary hover:text-primary hover:cursor-pointer",
         className
       )}

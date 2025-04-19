@@ -10,7 +10,7 @@ export default function SupplyPipeline() {
   return (
     <div className="min-h-screen">
       {/* Supply Pipeline Section */}
-      <section className="container mx-auto px-4 space-y-8">
+      <section className="container mx-auto space-y-8">
         {/* Header */}
         <SupplyPipelineHeader />
 
