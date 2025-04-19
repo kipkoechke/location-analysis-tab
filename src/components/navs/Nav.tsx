@@ -13,19 +13,24 @@ const links = [
 
 function Nav() {
   const pathname = usePathname();
+
   return (
     <nav className="flex gap-6">
-      {links.map(({ name, path }) => (
-        <Link
-          key={name}
-          href={path}
-          className={`${
-            path === pathname && "text-foreground font-semibold"
-          } hover:text-foreground capitalize transition-all`}
-        >
-          {name}
-        </Link>
-      ))}
+      {links.map(({ name, path }) => {
+        const isActive = path === pathname;
+
+        return (
+          <Link
+            key={name}
+            href={path}
+            className={`capitalize transition-all ${
+              isActive ? "text-primary font-bold" : "text-tertiary"
+            }`}
+          >
+            {name}
+          </Link>
+        );
+      })}
     </nav>
   );
 }
