@@ -36,7 +36,7 @@ const NearbyDevelopment = () => {
 
   return (
     <div className="mb-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-4">
+      <h3 className="text-lg font-bold text-primary mb-4">
         Nearby Developments
       </h3>
       {/* Grid Layout */}
@@ -54,21 +54,24 @@ const NearbyDevelopment = () => {
 
             {/* Details Section */}
             <div className="flex flex-col justify-between">
-              <p className="text-[16px] leading-[24px] font-[400] font-inter text-gray-900">
-                <span className="font-bold">Address:</span> {item.address}
+              <p className="text-tertiary">
+                <span className="font-bold text-primary">Address:</span>
+                {item.address}
               </p>
-              <p className="text-[16px] leading-[24px] font-[400] font-inter text-gray-900">
-                <span className="font-bold">Submarket:</span> {item.submarket}
+              <p className="text-tertiary">
+                <span className="font-bold text-primary">Submarket:</span>
+                {item.submarket}
               </p>
-              <p className="text-[16px] leading-[24px] font-[400] font-inter text-gray-900">
-                <span className="font-bold">Delivery Date:</span>{" "}
+              <p className="text-tertiary">
+                <span className="font-bold text-primary">Delivery Date:</span>
                 {item.deliveryDate}
               </p>
-              <p className="text-[16px] leading-[24px] font-[400] font-inter text-gray-900">
-                <span className="font-bold">Owner:</span> {item.owner}
+              <p className="text-tertiary">
+                <span className="font-bold text-primary">Owner:</span>
+                {item.owner}
               </p>
-              <p className="text-[16px] leading-[24px] font-[400] font-inter text-gray-900">
-                <span className="font-bold">SF:</span> {item.sf}
+              <p className="text-tertiary">
+                <span className="font-bold text-primary">SF:</span> {item.sf}
               </p>
             </div>
           </div>

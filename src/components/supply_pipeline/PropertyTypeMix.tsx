@@ -11,9 +11,7 @@ function PropertyTypeMix() {
 
   return (
     <div className="md:ml-8">
-      <h3 className="text-lg font-bold text-gray-900 mb-6">
-        Property Type Mix
-      </h3>
+      <h3 className="text-lg font-bold text-primary mb-6">Property Type Mix</h3>
 
       <div className="flex flex-col md:flex-row gap-4">
         {/* Chart Section */}

@@ -6,11 +6,11 @@ function ImpactAnalysis() {
   ];
   return (
     <div>
-      <h3 className="text-lg font-bold text-gray-900 mb-4">
+      <h3 className="text-lg font-bold text-primary mb-4">
         Market Impact Analysis
       </h3>
 
-      <p className="mb-4 text-gray-900">
+      <p className="mb-4 text-primary">
         New development activity in the area indicates:
       </p>
 
@@ -18,7 +18,7 @@ function ImpactAnalysis() {
         {impactPoints.map((point, index) => (
           <li key={index} className="flex items-start">
             <div className="w-2 h-2 rounded-full bg-gray-900 mt-2 mr-3"></div>
-            <span className="text-gray-900">{point}</span>
+            <span className="text-primary">{point}</span>
           </li>
         ))}
       </ul>

@@ -66,7 +66,7 @@ function ConstructionTimeline() {
   return (
     <div>
       <div className=" mb-8">
-        <h3 className="text-lg font-bold text-gray-900 mb-2">
+        <h3 className="text-lg font-bold text-primary mb-2">
           Construction Timeline
         </h3>
 
