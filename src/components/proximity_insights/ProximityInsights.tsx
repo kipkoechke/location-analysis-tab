@@ -1,22 +1,38 @@
+import { usePdfContext } from "@/context/PdfContext";
 import MajorTenantProximity from "./MajorTenantProximity";
+import Proximity from "./PData";
 import ProximityInsightsHeader from "./ProximityInsightsHeader";
 import ProximityToKeyInfra from "./ProximityToKeyInfra";
 
 export default function ProximityInsights() {
+  const { pdfData } = usePdfContext();
+
+  const hasProximityData = pdfData?.proximityData;
+
   return (
     <div className="min-h-screen">
-      {/* Main Content */}
       <main className="container mx-auto px-4">
-        {/* Proximity Section */}
-        <div>
-          {/* Proximity Insights Header */}
-          <ProximityInsightsHeader />
+        {hasProximityData ? (
+          <div>
+            {/* Proximity Insights Header */}
+            <ProximityInsightsHeader />
 
-          <ProximityToKeyInfra />
+            {/* Proximity Section */}
+            <Proximity />
 
-          {/* Major Tenant Proximity */}
-          <MajorTenantProximity />
-        </div>
+            {/* Proximity to Key Infrastructure */}
+            <ProximityToKeyInfra />
+
+            {/* Major Tenant Proximity */}
+            <MajorTenantProximity />
+          </div>
+        ) : (
+          <div className="flex items-center justify-center mt-20">
+            <p className="text-gray-700 text-lg font-semibold">
+              No proximity data available. Please upload a PDF.
+            </p>
+          </div>
+        )}
       </main>
     </div>
   );
