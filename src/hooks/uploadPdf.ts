@@ -30,8 +30,7 @@ export const useUploadPdf = () => {
   const queryClient = useQueryClient();
   const { mutate: uploadPdfMutation, isPending: isUploading } = useMutation({
     mutationFn: uploadPdf,
-    onSuccess: (data) => {
-      // Invalidate and refetch queries if needed
+    onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["pdfData"] });
       toast.success("PDF uploaded successfully!");
     },
